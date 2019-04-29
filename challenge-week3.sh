@@ -97,7 +97,3 @@ cd /media/$diskname
 ##VM webserver:##
 npm init -y
 node index.js
-
-
-
-
