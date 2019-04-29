@@ -1,0 +1,20 @@
+{
+  "name": "week5",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000c\u0000h\u0000a\u0000l\u0000l\u0000e\u0000n\u0000g\u0000e\u0000-\u0000w\u0000e\u0000e\u0000k\u00003\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doradoe1/challenge-week3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doradoe1/challenge-week3/issues"
+  },
+  "homepage": "https://github.com/doradoe1/challenge-week3#readme"
+}

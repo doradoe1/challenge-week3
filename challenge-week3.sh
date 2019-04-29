@@ -86,15 +86,16 @@ cp vminit.txt /media/$diskname
 cp -r node_modules /media/$diskname
 
 ##Sign in into the VM:##
-pip=$(az vm list /
--d
-| grep -E /publicIps/)
+pip=$(az vm list \
+-g $resourcegroup \
+--query "[].id")
 
 ssh celeste@$pip
 
 cd /media/$diskname
 
 ##VM webserver:##
+npm init -y
 node index.js
 
 
