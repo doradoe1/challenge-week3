@@ -85,12 +85,18 @@ cp index.js /media/$diskname
 cp vminit.txt /media/$diskname
 cp -r node_modules /media/$diskname
 
-pip=$(az vm show \
---resource-group $resourcegroup \
---name $vmname \
---show-details \
---output table \
---query [].name
-| grep -E $vmname)
-ssh celeste@
+##Sign in into the VM:##
+pip=$(az vm list /
+-d
+| grep -E /publicIps/)
+
+ssh celeste@$pip
+
+cd /media/$diskname
+
+##VM webserver:##
+node index.js
+
+
+
 
